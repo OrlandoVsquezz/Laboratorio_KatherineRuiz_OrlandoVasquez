@@ -12,6 +12,12 @@ public class AuthService {
     public void registrarUsuario(){
         System.out.printf("Ingrese el Username: ");
         String username = scan.nextLine();
+
+        if (registroDeUsuarios.containsKey(username)){
+            System.out.println("El username ya existe.");
+            return;
+        }
+
         System.out.printf("Ingrese la contraseña: ");
         String password = scan.nextLine();
         System.out.printf("Ingrese el nombre completo del usuario: ");

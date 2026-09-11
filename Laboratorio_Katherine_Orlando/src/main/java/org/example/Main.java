@@ -31,10 +31,10 @@ public class Main {
                 case 4:
                     boolean disponible = authService.verificarDisponibilidad();
                     if (disponible){
-                        System.out.println("El Username se encuentra disponible.");
+                        System.out.println("El username se encuentra disponible.");
                     }
                     else {
-                        System.out.println("Este Username ya existe, no está disponible.");
+                        System.out.println("Este username ya existe, no está disponible.");
                     }
                     break;
                 case 5:
